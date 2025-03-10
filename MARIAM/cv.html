@@ -1,0 +1,100 @@
+<!DOCTYPE html>           
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet un affichage réactif sur les appareils mobiles -->
+    <title>Portfolio - Mariam Modibo Mariko</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="./css/flex.css"> <!-- Lien vers le fichier CSS externe -->
+</head>
+<body>
+
+    <!-- En-tête du site comprenant le logo et le menu de navigation -->
+    <header class="porfolio" tabindex="0">
+        <div class="contenair0 logo">
+            <img src="../MARIAM/image/0075.png_300.png" alt="j'aime" title="mon image"> <!-- Image du logo avec texte alternatif et titre -->
+            <p>Portfolio</p> <!-- Titre du portfolio -->
+        </div>
+        <!-- Menu de navigation avec des boutons pour accéder aux différentes sections -->
+        <nav class="contenair0">
+            <button tabindex="0" id="language">listes des cours</button> <!-- Bouton pour afficher la liste des langages -->
+            <button id="project"><p>Projects</p></button> <!-- Bouton pour accéder à la section des projets -->
+            <button id="Apropos"><p>A propos</p></button> <!-- Bouton pour accéder à la section "À propos" -->
+            <button tabindex="0" id="contact">Contact</button> <!-- Bouton pour accéder à la section contact -->
+        </nav>
+    </header>
+
+    <!-- Section de présentation -->
+    <section class="presentation" tabindex="0">
+        <h1>Présentation</h1> <!-- Titre de la section -->
+        <p class="para1">Salut, je m'appelle Mariam Modibo Mariko. Je suis étudiante à l'IPSSI.</p> <!-- Texte de présentation -->
+        <button id="decouverte"><p>Découvrir mes competences</p></button> <!-- Bouton pour inviter à découvrir les projets -->
+    </section>
+
+    <!-- Section pour afficher les projets personnels -->
+    <section class="project-section" id="perso">
+        <h2><p>liste de mes projects personnelles</p></h2> <!-- Titre de la section des projets -->
+        <div class="card-container" id="product-list"></div> <!-- Conteneur pour afficher les projets sous forme de cartes -->
+        <ul id="cart-list" class="list-group"></ul> <!-- Liste pour afficher le panier des projets sélectionnés -->
+    </section>
+
+
+    <!-- Conteneur pour la liste des langages -->
+    <div id="container">
+        <div id="search">
+            <label for="searchInput" >Listes des cours  :</label> <!-- Étiquette pour la barre de recherche -->
+            <input id="searchInput" type="text"> <!-- Barre de recherche pour filtrer les langages -->
+        </div>
+        <!-- Liste des langages disponibles -->
+        <ul id="maListe">
+            <li class="sublist1"><a href="#">Python</a></li>
+            <li class="sublist1"><a href="#">JavaScript</a></li>
+            <li class="sublist1"><a href="#">C</a></li>
+            <li class="sublist1"><a href="#">HTML</a></li>
+            <li class="sublist1"><a href="#">C++</a></li>
+            <li class="sublist1"><a href="#">C#</a></li>
+            <li class="sublist1"><a href="#">réseaux</a></li>
+        </ul>
+    </div>
+
+    <!-- Section de contact -->
+    <section class="contact-section" tabindex="0" id="contacter">
+        <h2>Me Contacter</h2> <!-- Titre de la section de contact -->
+        <!-- Formulaire de contact -->
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Nom</label> <!-- Étiquette pour le champ de saisie du nom -->
+                <input type="text" id="name" name="name" placeholder="Votre nom"> <!-- Champ de saisie du nom -->
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label> <!-- Étiquette pour le champ de saisie de l'email -->
+                <input type="email" id="email" name="email" placeholder="Votre email"> <!-- Champ de saisie de l'email -->
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label> <!-- Étiquette pour le champ de saisie du message -->
+                <textarea id="message" name="message" placeholder="Votre message"></textarea> <!-- Zone de texte pour le message -->
+            </div>
+            <button type="submit">Envoyer</button> <!-- Bouton pour soumettre le formulaire -->
+        </form>
+    </section>
+
+    <!-- Section des réseaux sociaux -->
+    <section class="social-media-section" tabindex="0">
+        <h2>Réseaux sociaux</h2> <!-- Titre de la section des réseaux sociaux -->
+        <div class="social-media-icons">
+            <!-- Liens vers les réseaux sociaux avec leurs icônes -->
+            <a href="#"><img src="../MARIAM/image/R.png" alt="Facebook"></a>
+            <a href="#"><img src="../MARIAM/image/Instagram_icon.png.webp" alt="Instagram_icon"></a>
+            <a href="#"><img src="../MARIAM/image/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="../MARIAM/image/whatsapp-icon-free-png.webp" alt="whatsapp-icon"></a>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer tabindex="0">
+        <p>Mentions légales | © 2024 Portfolio</p> <!-- Texte du pied de page -->
+    </footer>
+
+    <!-- Inclusion du fichier JavaScript -->
+    <script src="js/cv.js"></script>
+</body>
+</html>

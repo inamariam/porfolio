@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: dodgerblue;
+  outline: none;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+}
+
+#seconnecter {
+  display: block;
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#seconnecter:hover {
+  background-color: #1e90ff;
+}
+
+.error-message {
+  color: rgb(9, 7, 75);
+  margin-top: 10px;
+  display: none;
+  background-color: #f8d7da;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .login-container {
+      padding: 15px;
+  }
+
+  #seconnecter {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
